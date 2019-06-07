@@ -4,3 +4,15 @@
   justify-content: space-around;
   padding-top: 10px;
 }
+
+.sub-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.sub-nav-item {
+  display: flex;
+  flex-direction: column;
+}
