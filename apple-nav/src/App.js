@@ -8,17 +8,21 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-
+      navItems: [],
+      selected: ""
     };
   }
 
   render() {
     return (
       <div>
-        <MainNav />
+        <Route
+          path='/'
+          render={props => <MainNav {...props} navItems={this.state.navItems}/>}
+        />
         <Route
           path='/:id'
-          render={props => <SubNav {...props}/>}
+          render={props => <SubNav {...props} selected={this.state.selected}/>}
         />
       </div>
     )
