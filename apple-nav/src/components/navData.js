@@ -1,6 +1,6 @@
 const navItems = [
   {main: "logo",
-  content: <img src="https://img.icons8.com/windows/32/000000/mac-os.png"/>,
+  content: <img src="https://img.icons8.com/metro/26/000000/mac-os.png"/>,
   subItems: []},
   {main: "Mac",
   content: "Mac",
@@ -80,9 +80,9 @@ const navItems = [
   content: "Support",
   subItems: []},
   {main: "Search",
-  content: "Search",
+  content: <img src="https://img.icons8.com/ios-glyphs/50/000000/search.png"/>,
   subItems: []},
   {main: "Bag",
-  content: "Bag",
+  content: <img src="https://img.icons8.com/ios/50/000000/shopping-bag.png"/>,
   subItems: []},
 ]
