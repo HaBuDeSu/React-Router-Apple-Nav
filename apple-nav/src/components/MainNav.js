@@ -7,7 +7,7 @@ const MainNav = props => {
   return(
     <div className="main-nav">
       {props.navItems.map(item => (
-        <Link to={`/${item.main}`}>
+        <Link key={item.main} to={`/${item.main}`}>
           <MainNavItem key={item.main} item={item} onClick={() => props.navSelector(item)}/>
         </Link>
       ))}
