@@ -8,7 +8,7 @@ const MainNav = props => {
     <div className="main-nav">
       {props.navItems.map(item => (
         <Link to={`/${item.main}`}>
-          <MainNavItem key={item.main} item={item} onClick={props.navSelector}/>
+          <MainNavItem key={item.main} item={item} onClick={() => props.navSelector(item)}/>
         </Link>
       ))}
     </div>

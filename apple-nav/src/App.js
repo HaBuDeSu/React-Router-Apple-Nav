@@ -14,10 +14,11 @@ class App extends Component {
     };
   }
 
-  navSelector = e => {
+  navSelector = item => {
     this.setState({
-      selected: e.target
-    })
+      selected: item
+    });
+    console.log(this.state.selected);
   }
 
   render() {
