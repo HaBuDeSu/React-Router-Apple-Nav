@@ -14,12 +14,18 @@ class App extends Component {
     };
   }
 
+  navSelector = e => {
+    this.setState({
+      selected: e.target
+    })
+  }
+
   render() {
     return (
       <div>
         <Route
           path='/'
-          render={props => <MainNav {...props} navItems={this.state.navItems}/>}
+          render={props => <MainNav {...props} navItems={this.state.navItems} navSelector={this.navSelector}/>}
         />
         <Route
           path='/:id'
