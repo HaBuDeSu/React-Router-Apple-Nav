@@ -10,14 +10,7 @@ class App extends Component {
     super();
     this.state = {
       navItems: navItems,
-      selected: ""
     };
-  }
-
-  navSelector = item => {
-    this.setState({
-      selected: item
-    });
   }
 
   render() {
@@ -25,11 +18,11 @@ class App extends Component {
       <div>
         <Route
           path='/'
-          render={props => <MainNav {...props} navItems={this.state.navItems} navSelector={this.navSelector}/>}
+          render={props => <MainNav {...props} navItems={this.state.navItems} />}
         />
         <Route
           path='/:id'
-          render={props => <SubNav {...props} selected={this.state.selected} navSelector={this.navSelector}/>}
+          render={props => <SubNav {...props} navItems={this.state.navItems} />}
         />
       </div>
     )
