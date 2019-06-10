@@ -18,7 +18,6 @@ class App extends Component {
     this.setState({
       selected: item
     });
-    console.log(this.state.selected);
   }
 
   render() {
@@ -30,7 +29,7 @@ class App extends Component {
         />
         <Route
           path='/:id'
-          render={props => <SubNav {...props} selected={this.state.selected}/>}
+          render={props => <SubNav {...props} selected={this.state.selected} navSelector={this.navSelector}/>}
         />
       </div>
     )
