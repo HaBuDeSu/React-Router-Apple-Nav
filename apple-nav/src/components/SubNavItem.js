@@ -3,9 +3,9 @@ import React from 'react';
 const SubNavItem = props => {
   return(
     <div className="sub-nav-item">
-      {props.item.img}
-      {props.item.new ? "New" : ""}
-      {props.item.id}
+      <div>{props.item.img}</div>
+      <div>{props.item.id}</div>
+      <div className="new-tag">{props.item.new ? "New" : ""}</div>
     </div>
   )
 }

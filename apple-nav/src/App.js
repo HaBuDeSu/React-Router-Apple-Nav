@@ -15,7 +15,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <Route
           path='/'
           render={props => <MainNav {...props} navItems={this.state.navItems} />}
